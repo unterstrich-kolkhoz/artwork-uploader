@@ -78,7 +78,7 @@ func resize(src string, format string, w int, h int, compression uint) (string, 
 		return "", err
 	}
 
-	f, err := ioutil.TempFile("", "thumbnailer")
+	f, err := ioutil.TempFile("", "uploader")
 	if err != nil {
 		return "", err
 	}
@@ -105,7 +105,7 @@ func getFile(url string) (string, error) {
 		return "", err
 	}
 
-	f, err := ioutil.TempFile("", "thumbnailer")
+	f, err := ioutil.TempFile("", "uploader")
 	if err != nil {
 		return "", err
 	}
